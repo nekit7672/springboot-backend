@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee , Long> {
+    default Employee getfindById(Long id) {
+        return null;
+    }
 }
